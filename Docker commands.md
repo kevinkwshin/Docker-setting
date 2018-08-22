@@ -1,1 +1,3 @@
-<pre><code>docker system prune -a</pre></code>
+
+<pre><code># clear all images, containers ...
+docker system prune -a</pre></code>
