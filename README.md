@@ -1,6 +1,6 @@
 # Docker-setting
 How to set GPU available Docker(Nvidia Docker) on Ubuntu
-
+<pre><code>
 # If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers
 docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
 sudo apt-get purge -y nvidia-docker
@@ -19,6 +19,7 @@ sudo pkill -SIGHUP dockerd
 
 # Test nvidia-smi with the latest official CUDA image
 docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+</pre></code>
 
 Lastly, if you want docker with out sudo command,
 <pre><code>sudo groupadd docker
