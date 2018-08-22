@@ -1,6 +1,6 @@
 # Docker-setting
 How to set GPU available Docker(Nvidia Docker) on Ubuntu
-__Set up your GPU driver before you go
+__Set up your GPU driver before you go__
 
 <pre><code># If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers
 docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
