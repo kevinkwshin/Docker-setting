@@ -1,3 +1,7 @@
+# Docker setup on Ubuntu 18.04
+https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver
+
+
 # Docker-setting
 How to set GPU available Docker(Nvidia Docker) on Ubuntu
 
