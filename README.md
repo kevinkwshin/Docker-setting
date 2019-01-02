@@ -1,15 +1,5 @@
-# Docker setup on Ubuntu 18.04
-https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt-get update
-sudo apt-get install docker-ce
-sudo service docker restart
-
-https://medium.com/@sh.tsang/docker-tutorial-5-nvidia-docker-2-0-installation-in-ubuntu-18-04-cb80f17cac65
-
+# Official stable Docker setup on Ubuntu
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
 
 # How to use Docker w/o sudo
 https://docs.docker.com/install/linux/linux-postinstall/
