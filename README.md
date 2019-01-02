@@ -1,10 +1,7 @@
 # Official stable Docker setup on Ubuntu
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
 
-# How to use Docker w/o sudo
-https://docs.docker.com/install/linux/linux-postinstall/
-
-# Docker-setting
+# Nvidia-Docker setting
 How to set GPU available Docker(Nvidia Docker) on Ubuntu
 
 __Set up your GPU driver before you go!__
@@ -36,3 +33,6 @@ sudo usermod -aG docker $USER <-- change your user name here
 log out & log in once
 <pre><code>docker run hello-world
 </code></pre>
+
+# How to use Docker w/o sudo
+https://docs.docker.com/install/linux/linux-postinstall/
