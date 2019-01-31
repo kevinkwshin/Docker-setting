@@ -18,12 +18,9 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
   sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 sudo apt-get update
 
+
 # Install nvidia-docker2 and reload the Docker daemon configuration
 sudo apt-get install -y nvidia-docker2
-# if the message below shown, try this. "The following packages have unmet dependencies:"
-apt-cache madison nvidia-docker2 nvidia-container-runtime
-sudo apt-get install --allow-downgrades docker-ce=<version>
-
 sudo pkill -SIGHUP dockerd
 
 # Test nvidia-smi with the latest official CUDA image
